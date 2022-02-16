@@ -1,2 +1,6 @@
 # auto-Explorer-Refresher
-A simple script made in Python to solve a problem of mine. The history of it is that my explorer.exe was using too much RAM (really really much, like 5GB+, sometimes the PC even crashed because of it) for no reason, so i created this script to solve that problem. 
+A simple script made in Python that kills and start again the explorer.exe process when it is using more than 45% of available RAM.
+
+Recommend you to compile it using: pyinstaller --onefile --uac-admin --name autoWinRefresher main.pyw (You'll need to install pyinstaller with pip before it, obviously.)
+
+All the dependencies are "auto-installable".
