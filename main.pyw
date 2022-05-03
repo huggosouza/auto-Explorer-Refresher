@@ -1,9 +1,6 @@
 import os as os
 from datetime import datetime
 from time import sleep
-
-# Install dependencies
-os.system('pip install psutil')
 import psutil
 
 while True:
@@ -19,7 +16,7 @@ while True:
             # Save the memory percent value
             mPercentValue = int(pInfoDict['memory_percent'])
             # Kill the process and start it again if memory percent >= 45
-            if mPercentValue >= 45:
+            if mPercentValue >= 27:
                 os.system('taskkill /f /IM explorer.exe')
                 print("Explorer killed. Restarting service...")
                 os.system('start explorer.exe')
